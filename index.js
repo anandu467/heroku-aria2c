@@ -37,7 +37,9 @@ app.get('/', (req, res) => {
 	res.send(`
 <!DOCTYPE html>
 <html>
-
+<script type="text/javascript">function ok(){
+	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
+}</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -54,17 +56,10 @@ app.get('/', (req, res) => {
             <div class="illustration"><i class="fas fa-user-circle"></i>
                 <h1 style="font-size: 20px;">Welcome Anandu</h1>
             </div>
-            <div class="form-group"><script>
-panel.onclick=function(){
-	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
-}
-downloads.onclick=function(){
-	open('/downloads/'+btoa(secret.value)+'/')
-}
-</script>
+            <div class="form-group">
 
 <input type="password" class="form-control" name="password" placeholder="Password" id="secret" /></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" id="panel" type="submit">Log In</button></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" id="panel" onclick=ok()>Log In</button></div>
         </form>
     </div>
     <script src="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/js/jquery.min.js"></script>
