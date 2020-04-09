@@ -43,11 +43,10 @@ app.get('/', (req, res) => {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/css/styles.min.css">
-</head>
+    <title>Mydrive</title>
+    <link rel="stylesheet" href="https://raw.githack.com/anandu467/heroku-aria2c/master/ariang/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.githack.com/anandu467/heroku-aria2c/master/ariang/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://raw.githack.com/anandu467/heroku-aria2c/master/ariang/assets/css/styles.min.css"></head>
 
 <body>
     <div class="login-clean">
@@ -62,10 +61,8 @@ app.get('/', (req, res) => {
             <div class="form-group"><button class="btn btn-primary btn-block" id="panel" onclick=ok()>Log In</button></div>
         </form>
     </div>
-    <script src="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/js/jquery.min.js"></script>
-    <script src="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="https://raw.githack.com/anandu467/heroku-aria2c/master/ariang/assets/js/jquery.min.js"></script>
+    <script src="https://raw.githack.com/anandu467/heroku-aria2c/master/ariang/assets/bootstrap/js/bootstrap.min.js"></script></body>
 </html>
 `)
 })
