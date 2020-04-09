@@ -35,11 +35,26 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<label for="secret">Enter your aria2 secret:</label>
-<input id="secret" type="text">
-<button id="panel">Go to AriaNg panel</button>
-<button id="downloads">View downloaded files</button>
-<script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div class="login-clean">
+        <form method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="fas fa-user-circle"></i>
+                <h1 style="font-size: 20px;">Welcome Anandu</h1>
+            </div>
+            <div class="form-group"><script>
 panel.onclick=function(){
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
 }
@@ -47,6 +62,16 @@ downloads.onclick=function(){
 	open('/downloads/'+btoa(secret.value)+'/')
 }
 </script>
+
+<input type="password" class="form-control" name="password" placeholder="Password" id="secret" /></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" id="panel" type="submit">Log In</button></div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
 `)
 })
 server.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`))
