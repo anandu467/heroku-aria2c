@@ -42,9 +42,9 @@ app.get('/', (req, res) => {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/css/styles.min.css">
 </head>
 
 <body>
@@ -67,8 +67,8 @@ downloads.onclick=function(){
             <div class="form-group"><button class="btn btn-primary btn-block" id="panel" type="submit">Log In</button></div>
         </form>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/js/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/anandu467/heroku-aria2c/master/ariang/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
